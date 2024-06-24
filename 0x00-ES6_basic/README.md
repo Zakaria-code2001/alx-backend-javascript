@@ -46,7 +46,6 @@ All of your functions must be exported
 Setup
 Install NodeJS 12.11.x
 (in your home directory):
-
 curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
 sudo apt install nodejs -y
@@ -140,3 +139,4 @@ module.exports = {
 
 Finally…
 Don’t forget to run npm install from the terminal of your project folder to install all necessary project dependencies.
+yahoo
