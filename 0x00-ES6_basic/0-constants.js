@@ -1,20 +1,15 @@
+/* eslint-disable no-unused-vars */
 export function taskFirst () {
   const task = 'I prefer const when I can.';
   return task;
 }
 
-/**
-   * Returns a string indicating that sometimes let is okay.
-   * @returns {string} The last part of the combination.
-   */
+/* eslint-disable no-unused-vars */
 export function getLast () {
   return ' is okay';
 }
 
-/**
-   * Combines a base string with the result of getLast().
-   * @returns {string} The combined string.
-   */
+/* eslint-disable no-unused-vars */
 export function taskNext () {
   let combination = 'But sometimes let';
   combination += getLast();
