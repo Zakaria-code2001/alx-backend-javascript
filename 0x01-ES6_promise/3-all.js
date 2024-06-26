@@ -1,8 +1,9 @@
 import { uploadPhoto, createUser } from './utils';
 
-export default function handleProfileSignup() {
-  return Promise
-    .all([uploadPhoto(), createUser()])
-    .then((values) => console.log(`${values[0].body} ${values[1].firstName} ${values[1].lastName}`))
-    .catch(() => console.log('404'));
-}
+const handleProfileSignup = () => Promise.all([createUser(), uploadPhoto()])
+  .then(([user, photo]) => {
+    console.log(`${photo.body} ${user.firstName} ${user.lastName}`);
+  })
+  .catch(() => console.log('Not Found'));
+
+export default handleProfileSignup;
