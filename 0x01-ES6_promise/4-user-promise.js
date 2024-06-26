@@ -1,5 +1,3 @@
-const signUpUser = (firstName, lastName) => {
-  return Promise.resolve({ firstName: `${firstName}`, lastName: `${lastName}` });
-};
+const signUpUser = (firstName, lastName) => Promise.resolve({ firstName: `${firstName}`, lastName: `${lastName}` });
 
 export default signUpUser;
