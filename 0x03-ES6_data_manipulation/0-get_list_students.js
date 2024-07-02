@@ -1,14 +1,19 @@
-const getListStudents = () => {
-  const data = [
-    [1, 'Guillaume', 'San Francisco'],
-    [2, 'James', 'Columbia'],
-    [5, 'Serena', 'San Francisco']];
-
-  return data.map((element) => ({
-    id: element[0],
-    firstName: element[1],
-    location: element[2],
-  }));
-};
+const getListStudents = () => [
+    {
+      id: 1,
+      firstName: 'Guillaume',
+      location: 'San Francisco',
+    },
+    {
+      id: 2,
+      firstName: 'James',
+      location: 'Columbia',
+    },
+    {
+      id: 5,
+      firstName: 'Serena',
+      location: 'San Francisco',
+    },
+  ];
 
 export default getListStudents;
