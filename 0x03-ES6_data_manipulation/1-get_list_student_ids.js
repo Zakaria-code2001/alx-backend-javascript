@@ -1,8 +1,10 @@
 const getListStudentIds = (arr) => {
-  if (Array.isArray(arr)) {
-    return arr.map((element) => element.id);
+  let newArr = [];
+  if (arr instanceof Array) {
+    newArr = arr.map((item) => item.id);
   }
-  return [];
+
+  return newArr;
 };
 
 export default getListStudentIds;
