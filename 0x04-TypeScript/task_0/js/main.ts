@@ -33,5 +33,5 @@ studentsList.forEach(student => {
     const locationCell = tr.insertCell();
     locationCell.innerText = student.location;
     
-
-  });
+    table.appendChild(tr);
+});
